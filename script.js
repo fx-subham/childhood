@@ -1,32 +1,50 @@
-// Create floating hearts ❤️
+// GET ELEMENTS
 
-function createHeart() {
+const startBtn = document.getElementById("startBtn");
 
-    const heart = document.createElement("div");
+const music = document.getElementById("bgMusic");
 
-    heart.innerHTML = "❤️";
+const hero = document.getElementById("hero");
 
-    heart.classList.add("floating-heart");
-
-    heart.style.left = Math.random() * 100 + "vw";
-
-    heart.style.fontSize =
-        Math.random() * 20 + 15 + "px";
-
-    document.body.appendChild(heart);
+const mainJourney = document.getElementById("mainJourney");
 
 
-    // Remove heart after animation
+// START BUTTON CLICK
 
-    setTimeout(() => {
+startBtn.addEventListener("click", function () {
 
-        heart.remove();
+    // ================= MUSIC =================
 
-    }, 6000);
+    music.play()
 
-}
+        .then(() => {
+
+            console.log("Music started ❤️");
+
+        })
+
+        .catch((error) => {
+
+            console.log("Music error:", error);
+
+        });
 
 
-// Create a heart every 700 milliseconds
+    // ================= SHOW JOURNEY =================
 
-setInterval(createHeart, 700);
+    mainJourney.classList.add("show");
+
+
+    // ================= SMOOTH SCROLL =================
+
+    setTimeout(function () {
+
+        mainJourney.scrollIntoView({
+
+            behavior: "smooth"
+
+        });
+
+    }, 300);
+
+});

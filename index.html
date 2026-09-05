@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Our Beautiful Journey ❤️</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Google Font -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
 </head>
+
 
 <body>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- MUSIC -->
+    <audio id="bgMusic" loop>
+        <source src="Hasi (Female).mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- ================= FIRST PAGE ================= -->
+
+    <section class="hero" id="hero">
 
         <div class="hero-content">
 
@@ -33,235 +42,284 @@
                 and somehow, our paths crossed. 🥹❤️
             </p>
 
-            <a href="#journey" class="start-btn">
-                Start Our Journey ❤️
-            </a>
+            <button id="startBtn" class="start-btn">
+                Start Our Journey 💕
+            </button>
 
         </div>
 
     </section>
 
 
-    <!-- Journey Section -->
 
-    <section id="journey" class="journey">
+    <!-- ================= JOURNEY STARTS HERE ================= -->
 
-        <h2>From Childhood To Us ❤️</h2>
-
-        <p class="journey-intro">
-            Before we knew each other... we were already living our own little stories.
-        </p>
+    <main id="mainJourney" class="main-journey">
 
 
-        <!-- Stage 1 -->
+        <!-- JOURNEY TITLE -->
 
-        <div class="stage">
+        <section class="journey">
 
-            <h3>👶 Chapter 1: Childhood</h3>
+            <h2>From Childhood To Us ❤️</h2>
 
-            <div class="photos">
-
-                <div class="photo-card">
-
-                    <img src="images/2.jpeg" alt="My Childhood">
-
-                    <p>Me 👶</p>
-
-                </div>
-
-
-                <div class="heart">❤️</div>
-
-
-                <div class="photo-card">
-
-                    <img src="images/1.jpeg" alt="Her Childhood">
-
-                    <p>Her 👶</p>
-
-                </div>
-
-            </div>
-
-
-            <p class="message">
-
-                Two little souls... living in different worlds,
-                not knowing that one day their paths would become one beautiful story. 🥹❤️
-
+            <p class="journey-intro">
+                Before we knew each other... we were already
+                living our own little stories.
             </p>
 
-        </div>
+
+            <!-- ================= STAGE 1 ================= -->
+
+            <div class="stage">
+
+                <h3>👶 Chapter 1: Childhood</h3>
+
+                <div class="photos">
+
+                    <div class="photo-card">
+
+                        <img src="images/my-childhood.jpg">
+
+                        <p>Little Me 👶</p>
+
+                    </div>
 
 
-        <!-- Stage 2 -->
-
-        <div class="stage">
-
-            <h3>🌱 Chapter 2: Growing Up</h3>
+                    <div class="heart">❤️</div>
 
 
-            <div class="photos">
+                    <div class="photo-card">
 
-                <div class="photo-card">
+                        <img src="images/her-childhood.jpg">
 
-                    <img src="images/my-growing.jpg" alt="Me Growing Up">
+                        <p>Little Her 👶</p>
 
-                    <p>My Journey 🌱</p>
+                    </div>
 
                 </div>
 
 
-                <div class="heart">💕</div>
+                <p class="message">
 
+                    Two little souls... living in completely
+                    different worlds.
 
-                <div class="photo-card">
+                    <br><br>
 
-                    <img src="images/her-growing.jpg" alt="Her Growing Up">
+                    We didn't know each other.
+                    We didn't know our stories would ever meet.
 
-                    <p>Her Journey 🌸</p>
+                    <br><br>
 
-                </div>
+                    But maybe destiny already had something
+                    beautiful planned for us. 🥹❤️
+
+                </p>
 
             </div>
 
 
-            <p class="message">
 
-                We grew up separately... making memories,
-                chasing dreams, facing challenges,
-                without knowing that destiny was slowly bringing us closer. ❤️
+            <!-- ================= STAGE 2 ================= -->
 
-            </p>
+            <div class="stage">
 
-        </div>
+                <h3>🌱 Chapter 2: Growing Up</h3>
 
+                <div class="photos">
 
-        <!-- Stage 3 -->
+                    <div class="photo-card">
 
-        <div class="stage">
+                        <img src="images/my-growing.jpg">
 
-            <h3>✨ Chapter 3: Two Paths Getting Closer</h3>
+                        <p>Growing Up 🌱</p>
 
-
-            <div class="photos">
-
-                <div class="photo-card">
-
-                    <img src="images/my-young.jpg" alt="Me">
-
-                    <p>My Story ✨</p>
-
-                </div>
+                    </div>
 
 
-                <div class="heart">💞</div>
+                    <div class="heart">💕</div>
 
 
-                <div class="photo-card">
+                    <div class="photo-card">
 
-                    <img src="images/her-young.jpg" alt="Her">
+                        <img src="images/her-growing.jpg">
 
-                    <p>Her Story ✨</p>
+                        <p>Growing Up 🌸</p>
+
+                    </div>
 
                 </div>
+
+
+                <p class="message">
+
+                    We grew up separately...
+
+                    <br><br>
+
+                    Making memories, learning from life,
+                    chasing dreams, and becoming who we are today.
+
+                    <br><br>
+
+                    Without knowing that somewhere along
+                    our journeys, our paths were getting closer. ❤️
+
+                </p>
 
             </div>
 
 
-            <p class="message">
 
-                Different lives... different stories...
-                but maybe every step we took was quietly leading us
-                toward the moment we would finally meet. 🫂❤️
+            <!-- ================= STAGE 3 ================= -->
 
-            </p>
+            <div class="stage">
 
-        </div>
+                <h3>✨ Chapter 3: Our Paths Were Getting Closer</h3>
 
+                <div class="photos">
 
-        <!-- Stage 4 -->
+                    <div class="photo-card">
 
-        <div class="stage final-stage">
+                        <img src="images/my-young.jpg">
 
-            <h3>❤️ Chapter 4: Us, Today</h3>
+                        <p>My Journey ✨</p>
 
-
-            <div class="photos">
-
-                <div class="photo-card">
-
-                    <img src="images/me-now.jpg" alt="Me Now">
-
-                    <p>Me ❤️</p>
-
-                </div>
+                    </div>
 
 
-                <div class="heart big-heart">❤️</div>
+                    <div class="heart">💞</div>
 
 
-                <div class="photo-card">
+                    <div class="photo-card">
 
-                    <img src="images/her-now.jpg" alt="Her Now">
+                        <img src="images/her-young.jpg">
 
-                    <p>Her ❤️</p>
+                        <p>Her Journey ✨</p>
+
+                    </div>
 
                 </div>
+
+
+                <p class="message">
+
+                    Different stories...
+
+                    Different memories...
+
+                    Different lives...
+
+                    <br><br>
+
+                    But maybe every step we took was quietly
+                    leading us towards the moment our paths
+                    would finally cross. 🫂❤️
+
+                </p>
 
             </div>
 
 
-            <p class="message final-message">
 
-                And now... after all those years,
-                two childhood stories have somehow become one beautiful journey.
+            <!-- ================= STAGE 4 ================= -->
+
+            <div class="stage final-stage">
+
+                <h3>❤️ Chapter 4: Us, Today</h3>
+
+                <div class="photos">
+
+                    <div class="photo-card">
+
+                        <img src="images/me-now.jpg">
+
+                        <p>Me ❤️</p>
+
+                    </div>
+
+
+                    <div class="heart big-heart">❤️</div>
+
+
+                    <div class="photo-card">
+
+                        <img src="images/her-now.jpg">
+
+                        <p>Her ❤️</p>
+
+                    </div>
+
+                </div>
+
+
+                <p class="message final-message">
+
+                    And now...
+
+                    <br><br>
+
+                    After all those years...
+
+                    Two different childhood stories have somehow
+                    become one beautiful journey.
+
+                    <br><br>
+
+                    I don't know what destiny has planned for us...
+
+                    <br><br>
+
+                    But I will always be grateful that
+                    our paths crossed. 🥹🫂❤️
+
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ================= ENDING ================= -->
+
+        <section class="ending">
+
+            <h2>And This Is Only The Beginning... ❤️</h2>
+
+            <p>
+
+                From two little children living
+                completely different lives...
 
                 <br><br>
 
-                I don't know what destiny has planned for us,
-                but I know one thing...
+                To two people sharing memories,
+                laughter, emotions, and dreams together.
 
                 <br><br>
 
-                I am truly grateful that our paths crossed. 🥹🫂❤️
+                And I hope this beautiful journey
+                continues for a very long time. 🥹❤️
 
             </p>
 
-        </div>
+            <div class="forever">
+                ❤️ You & Me ❤️
+            </div>
+
+        </section>
 
 
-    </section>
+    </main>
 
 
-    <!-- Ending -->
+    <!-- JAVASCRIPT -->
 
-    <section class="ending">
-
-        <h2>And This Is Only The Beginning... ❤️</h2>
-
-        <p>
-
-            From two little children living different lives...
-            to two people sharing memories, laughter, emotions,
-            and dreams together.
-
-            <br><br>
-
-            Our journey has been beautiful so far...
-
-            <br><br>
-
-            And I hope we still have many more chapters left to write together. 🥹❤️
-
-        </p>
-
-        <div class="forever">
-            ❤️ You & Me ❤️
-        </div>
-
-    </section>
-
+    <script src="script.js"></script>
 
 </body>
+
 </html>
